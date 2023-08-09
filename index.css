@@ -4,50 +4,55 @@
 }
 
 body {
-  min-height: 100vh;
-  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: teal;
+  background-color: skyblue;
 }
 
 .slider {
-  position: relative;
-  width: 100%;
+  width: 100%; /* Adjust this as needed */
   height: 370px;
   overflow: hidden;
+  position: relative;
 }
 
 .item {
   position: absolute;
-  width: 300px;
-  height: 320px;
-  background-color: white;
-  padding: 15px;
+  width: 250px;
+  height: 350px;
+  padding: 10px;
+  background: white;
   border-radius: 5px;
   transition: 0.5s;
-  left: calc(50% - 167px);
+  left: calc(50% - 140px);
+  top: 0;
+  z-index: 999;
 }
-#next,
-#prev {
+
+img.img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+h3.title {
+  padding: 10px 0px;
+}
+
+#prev,
+#next {
   position: absolute;
-  top: 50%;
   left: 20px;
+  top: 50%;
   border: none;
   outline: none;
-  padding: 6px 15px;
-  border-radius: 4px;
-  text-transform: uppercase;
+  padding: 5px 17px;
+  border-radius: 3px;
   font-weight: bold;
+  font-size: 18px;
 }
 #next {
   left: unset;
   right: 20px;
-}
-img.img {
-  width: 100%;
-}
-.title {
-  padding: 10px 0px;
 }
